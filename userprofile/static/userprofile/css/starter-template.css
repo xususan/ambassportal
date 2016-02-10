@@ -3,7 +3,6 @@
 /* =================================================================== */
 
 body {
-  padding-top: 2%;
   height:100%;
   font-family:'Lato';
 }
@@ -11,7 +10,7 @@ html{
 	height:100%;
 }
 .starter-template {
-  padding: 1% 5%;
+  padding: 3% 5%;
   text-align: center;
   min-height: 100%;
   /*color: #29d8d1 obnoxious blue color*/
@@ -24,9 +23,8 @@ html{
   color:white;
 }
 .name{
-  font-size:2em;
-  font-weight:bold;
-  padding-top:1%;
+  font-size:3em;
+  padding-top:0%;
 }
 .footer {
   position: absolute;
