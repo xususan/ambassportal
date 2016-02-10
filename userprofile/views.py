@@ -24,15 +24,13 @@ def anotherTest(request):
     "x-user-location": "[54,12]"
     }
      res = requests.post("https://masu-api-staging.sngp.co/ambassador/supervisors", headers=headers, 
-     	"data"= {
-    "attributes": {
+    "data": {
       "first_name": "aaa",
       "last_name": "bbb",
       "email":"test@test.com",
       "supervisor_id": "e9b73827-acb9-46d7-b330-527a679ce975",
       "college": "Harvard",
       "password": "p@ssw0rd"
-    }
   }
 )
     # print(res.status_code, res.reason)
