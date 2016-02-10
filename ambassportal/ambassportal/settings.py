@@ -36,11 +36,11 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    # 'django.contrib.sites',
+    'django.contrib.sites',
+    'userprofile.apps.UserprofileConfig',
     'django.contrib.flatpages',
     'social.apps.django_app.default',
     'allaccess',
-    'userprofile',
 )
 
 MIDDLEWARE_CLASSES = (
