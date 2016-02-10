@@ -42,8 +42,6 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     'allaccess',
     'login',
-    'userprofile',
-
 )
 
 MIDDLEWARE_CLASSES = (
