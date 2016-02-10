@@ -22,9 +22,8 @@ html{
   background-color: #4F5165;
   color:white;
 }
-.name{
-  font-size:2em;
-  padding-top:0%;
+.h1{
+  margin:0;
 }
 .footer {
   position: absolute;
