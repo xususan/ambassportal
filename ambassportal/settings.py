@@ -42,6 +42,7 @@ INSTALLED_APPS = (
     'social.apps.django_app.default',
     'allaccess',
     'login',
+    'userprofile',
 
 )
 
@@ -86,17 +87,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'ambassportal.wsgi.application'
 
-
-# Database
-# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    }
-}
-
 AUTH_PASSWORD_VALIDATORS = [
     {
         'NAME': 'django.contrib.auth.password_validation.UserAttributeSimilarityValidator',
@@ -119,11 +109,24 @@ AUTHENTICATION_BACKENDS = (
     'social.backends.facebook.FacebookOAuth2',
 )
 
+# Database
+# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
+
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}
+
+FACEBOOK_APP_ID='App ID here'
+FACEBOOK_API_SECRET='App Secret here'
+
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
 
 LANGUAGE_CODE = 'en-us'
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'EST'
 USE_I18N = True
 USE_L10N = True
 USE_TZ = True
