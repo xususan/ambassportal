@@ -5,10 +5,10 @@ from django.db import models
 # Create your models here.
 
 class UserInfo(models.Model):
-	name = 
-	points =
-	photo =
-	university =
-	ambassador_lead =
+	name = models.CharField(max_length=30)
+	points = models.IntegerField()
+	photo = models.CharField(max_length=30)
+	university = models.CharField(max_length=30)
+	ambassador_lead =models.CharField(max_length=30)
 
 	
