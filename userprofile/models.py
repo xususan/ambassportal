@@ -9,6 +9,6 @@ class UserInfo(models.Model):
 	points = models.IntegerField()
 	photo = models.CharField(max_length=30)
 	university = models.CharField(max_length=30)
-	ambassador_lead =models.CharField(max_length=30)
+	supervisor = models.CharField(max_length=30)
 
 	
