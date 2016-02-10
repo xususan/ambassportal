@@ -9,7 +9,7 @@ urlpatterns = [
     # url(r'^$', 'ambassportal.views.home', name='home'),
     # url(r'^blog/', include('blog.urls')),
     url(r'^$', views.populate_home_page),
-    url(r'^profile/', views.populate_profile),
+    #url(r'^profile/', views.populate_profile),
     url(r'^admin/', include(admin.site.urls)),
     url('', include('social.apps.django_app.urls', namespace='social')),
     url(r'^(?P<url>.*/)$', views.flatpage),
