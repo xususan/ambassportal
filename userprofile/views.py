@@ -6,5 +6,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def index(request):
-	template = loader.get_template('userprofile/index.html')
-	return HttpResponse(template.render())
+	return render('userprofile/index.html')
