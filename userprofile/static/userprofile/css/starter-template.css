@@ -22,8 +22,8 @@ html{
   background-color: #4F5165;
   color:white;
 }
-h1{
-  margin:0;
+.name h1{
+  margin:0px;
 }
 .footer {
   position: absolute;
