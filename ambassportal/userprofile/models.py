@@ -8,8 +8,8 @@ def rename_file(instance, filename):
     return filename
     
 class User(authmodels.User):
-    supervisor_id = models.CharField(max_length=30)
-    college = models.CharField(max_length=30)
-    points = models.IntegerField()
-    prof_pic = models.ImageField(upload_to=rename_file, max_length=300)
+    supervisor_id = models.CharField(max_length=30, blank=True)
+    college = models.CharField(max_length=30, blank=True)
+    points = models.IntegerField(blank=True)
+    prof_pic = models.ImageField(upload_to=rename_file, max_length=300, blank=True)
 
