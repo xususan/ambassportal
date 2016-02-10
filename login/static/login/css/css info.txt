@@ -1,0 +1,6 @@
+Colors: 
+#3ebbb6 Getmii less obnoxious blue
+#29d8d1 Obnoxious Blue
+
+Lato - normal font 
+Sacramento - Curly font

@@ -1,3 +1,4 @@
+
 """
 Django settings for ambassportal project on Heroku. Fore more info, see:
 https://github.com/heroku/heroku-django-template
@@ -37,7 +38,11 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'django.contrib.sites',
-    'django.contrib.flatpages' 
+    'django.contrib.flatpages',
+    'social.apps.django_app.default',
+    'allaccess',
+    'login',
+
 )
 
 MIDDLEWARE_CLASSES = (
@@ -64,6 +69,15 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.contrib.auth.context_processors.auth',
+                'django.core.context_processors.debug',
+                'django.core.context_processors.i18n',
+                'django.core.context_processors.media',
+                'django.core.context_processors.static',
+                'django.core.context_processors.tz',
+                'django.contrib.messages.context_processors.messages',
+                'social.apps.django_app.context_processors.backends',
+                'social.apps.django_app.context_processors.login_redirect',
             ],
             'debug': DEBUG,
         },
@@ -97,6 +111,13 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
+
+AUTHENTICATION_BACKENDS = (
+    # Default backend
+    'django.contrib.auth.backends.ModelBackend',
+    # Additional backend
+    'social.backends.facebook.FacebookOAuth2',
+)
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.9/topics/i18n/
