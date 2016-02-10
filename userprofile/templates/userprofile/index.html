@@ -26,7 +26,7 @@
 
 
     <!-- Custom styles for this template -->
-    <link href="starter-template.css" rel="stylesheet">
+    <link href="{% static 'userprofile/css/starter-template.css' %}" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
@@ -68,7 +68,7 @@
         <div class="profile">
 
           <div class="profile-picture">
-            <img class="photo" src="img/profilephoto.png">
+            <img class="photo" src="{% static 'userprofile/img/profilephoto.png' %}">
           </div>
           <div class="profile-info">
             <div class="name">
@@ -80,7 +80,7 @@
         <div class="logoindicator">
           <figure class="chart" data-percent="75">
             <figcaption></figcaption>
-            <img class="html" src="img/getmiilogowhitebg.png">
+            <img class="html" src="{% static 'img/getmiilogowhitebg.png %}">
             <svg width="200" height="200">
               <circle class="outer" cx="95" cy="95" r="85" transform="rotate(-90, 95, 95)"/>
             </svg>
@@ -104,7 +104,7 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="{% static 'userprofile/js/bootstrap.min.js' %}"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
     <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
   </body>
