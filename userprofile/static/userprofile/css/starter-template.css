@@ -94,6 +94,18 @@ h4{
   max-height: 70px;
   padding-left: 0px;
 }
+.name{
+  margin:0px;
+  padding:0px;
+}
+.level{
+  margin:0px;
+  font-size:12px;
+}
+.levelnum {
+  font-size:18px;
+
+}
 .chart {
   position: relative;
   display: inline-block;
